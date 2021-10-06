@@ -1,30 +1,4 @@
 "use strict" ;
-
-function genDestination(){
-    let destinations = ["Milwaukee", "Chicago", "New York", "Denver", "San Diego", "Orlando", "Dallas"];
-    let randomCity = destinations[Math.floor(Math.random() * destinations.length)];
-    return randomCity;
-}
-
-function genRestaurant(){
-    let restaurants = ["Red Lobster", "McDonalds", "Red Robins", "Ruby Tuesday", "Prime Steaks", "Chik Fil A", "Fridays"];
-    let randomRestaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
-    return randomRestaurant;
-}
-
-function genTransport(){
-    let transport = ["Walk", "Shared Drive - Uber", "Flight", "Walk"];
-    let randomTransport = transport[Math.floor(Math.random() * transport.length)];
-    return randomTransport;
-}
-
-function genEnt(){
-    let ent = ["Museum", "Aquarium", "Baseball Stadium", "Water park"];
-    let randomEnt = ent[Math.floor(Math.random() * ent.length)];
-    return randomEnt;
-}
-
-
 let happy = false;
 
 while(happy == false){
@@ -42,3 +16,9 @@ while(happy == false){
     happy = false 
     }
 }
+
+function randomItemFromArray(arrayOne){
+    return arrayOne[Math.floor(Math.random() * arrayOne.length)];
+}
+
+randomItemFromArray(["Museum", "Aquarium", "Baseball Stadium", "Water park"]);
